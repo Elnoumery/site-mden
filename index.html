@@ -1,120 +1,324 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MDEN - Formations en Data Science et IA</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MDEN — Learn AI, ML, Data Science & Web Design</title>
+
+  <!-- SEO & Open Graph -->
+  <meta name="description" content="MDEN — Professional training for passionate people: AI, Machine Learning, Data Science, and Web Design. Live courses, hands-on projects, mentors, and career support." />
+  <meta property="og:title" content="MDEN — Learn AI, ML, Data Science & Web Design" />
+  <meta property="og:description" content="Professional training for passionate learners. Practical projects, mentorship, and career-ready portfolios." />
+  <meta property="og:image" content="logo.svg" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="logo.svg" type="image/svg+xml" />
+
+  <!-- Fonts (Google Fonts) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="theme-default">
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="logo" href="#">
+        <img src="logo.svg" alt="MDEN logo" class="logo-img" />
+        <span class="brand">MDEN</span>
+      </a>
 
-    <header class="header">
-        <div class="container">
-            <h1 class="logo">MDEN</h1>
-            <nav class="navbar">
-                <ul class="nav-links">
-                    <li><a href="#formations">Formations</a></li>
-                    <li><a href="#avantages">Pourquoi MDEN ?</a></li>
-                    <li><a href="#temoignages">Témoignages</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <button class="burger-menu" aria-label="Ouvrir le menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </nav>
+      <div class="header-right">
+        <div class="theme-switcher" aria-hidden="false" title="Theme palettes">
+          <button class="palette-btn" data-palette="default" aria-label="Default palette">•</button>
+          <button class="palette-btn" data-palette="ocean" aria-label="Ocean palette">•</button>
+          <button class="palette-btn" data-palette="sunset" aria-label="Sunset palette">•</button>
         </div>
-    </header>
 
-    <main>
-        
-        <section class="hero-section">
-            <div class="container">
-                <div class="hero-content">
-                    <h2>Transformez votre carrière avec la Data Science et l'IA</h2>
-                    <p>Des formations d'excellence pour maîtriser l'apprentissage automatique et l'analyse de données.</p>
-                    <a href="#formations" class="cta-button">Découvrir nos formations</a>
-                </div>
-            </div>
-        </section>
+        <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav">☰</button>
+      </div>
 
-        <section id="formations" class="formations-section">
-            <div class="container">
-                <h3>Nos Formations</h3>
-                <div class="formations-grid">
-                    <div class="formation-card">
-                        <h4>Data Science</h4>
-                        <p>Apprenez à collecter, analyser et interpréter des données pour prendre des décisions éclairées.</p>
-                        <a href="#">En savoir plus</a>
-                    </div>
-                    <div class="formation-card">
-                        <h4>Intelligence Artificielle</h4>
-                        <p>Plongez au cœur de l'IA et construisez des systèmes intelligents capables d'apprendre et de raisonner.</p>
-                        <a href="#">En savoir plus</a>
-                    </div>
-                    <div class="formation-card">
-                        <h4>Machine Learning</h4>
-                        <p>Maîtrisez les algorithmes pour prédire, classer et découvrir des tendances cachées dans vos données.</p>
-                        <a href="#">En savoir plus</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <nav id="nav" class="nav" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#instructors">Instructors</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="btn small" href="#enroll">Enroll</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <section id="avantages" class="avantages-section">
-            <div class="container">
-                <h3>Pourquoi choisir MDEN ?</h3>
-                <div class="avantages-grid">
-                    <div class="avantage-item">
-                        <img src="https://via.placeholder.com/64" alt="Icône formateurs experts">
-                        <p>Formateurs experts de l'industrie</p>
-                    </div>
-                    <div class="avantage-item">
-                        <img src="https://via.placeholder.com/64" alt="Icône approche pratique">
-                        <p>Approche 100% pratique et projets concrets</p>
-                    </div>
-                    <div class="avantage-item">
-                        <img src="https://via.placeholder.com/64" alt="Icône certification">
-                        <p>Certification reconnue</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <main>
+    <section id="home" class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1 id="hero-heading">MDEN — Train for the future: AI, Machine Learning, Data Science & Web Design</h1>
+          <p class="lead">Hands-on courses crafted by industry experts. Build a portfolio of real projects, get mentorship, and launch your career in data and web.</p>
 
-        <section id="temoignages" class="temoignages-section">
-            <div class="container">
-                <h3>Ce que nos étudiants disent</h3>
-                <div class="carousel-container">
-                    <div class="carousel-slider">
-                        <div class="testimonial-slide">
-                            <blockquote>"La formation a dépassé mes attentes. Les formateurs sont incroyables et le contenu très pertinent !"</blockquote>
-                            <cite>— Jean Dupont, Data Analyst</cite>
-                        </div>
-                        </div>
-                    <div class="carousel-nav">
-                        <button class="prev-button">❮</button>
-                        <button class="next-button">❯</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-    </main>
+          <p class="cta-row">
+            <a class="btn primary" href="#courses">Explore Courses</a>
+            <a class="btn outline" href="#pricing">See Pricing</a>
+          </p>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 MDEN. Tous droits réservés.</p>
-            <div class="social-links">
-                <a href="#">LinkedIn</a>
-                <a href="#">X (Twitter)</a>
-            </div>
+          <ul class="hero-features">
+            <li>Live workshops & recorded lessons</li>
+            <li>Project-driven curriculum</li>
+            <li>Mentorship & career guidance</li>
+          </ul>
         </div>
-    </footer>
 
-    <script src="script.js"></script>
+        <div class="hero-aside" aria-hidden="false">
+          <div class="stats">
+            <div class="stat">
+              <div class="stat-value">120+</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat">
+              <div class="stat-value">80%</div>
+              <div class="stat-label">Job-ready grads</div>
+            </div>
+            <div class="stat">
+              <div class="stat-value">1:6</div>
+              <div class="stat-label">Mentor ratio</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="courses" class="container courses" aria-labelledby="courses-heading">
+      <h2 id="courses-heading">Featured Courses</h2>
+      <p class="section-lead">Practical, up-to-date tracks. Start from fundamentals and build production-ready skills.</p>
+
+      <div class="grid course-grid">
+        <article class="course-card">
+          <div class="course-top">
+            <h3>AI Foundations</h3>
+            <p class="muted">Math for ML, neural networks, and model evaluation</p>
+          </div>
+          <ul class="course-bullets">
+            <li>Linear algebra & probability</li>
+            <li>Neural nets & training</li>
+            <li>Capstone: Image classifier</li>
+          </ul>
+          <div class="card-actions">
+            <a class="btn small" href="#enroll">Enroll</a>
+            <a class="muted-link" href="#courses">Syllabus</a>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <div class="course-top">
+            <h3>Machine Learning Engineering</h3>
+            <p class="muted">From prototypes to production: pipelines, MLOps, and deployment</p>
+          </div>
+          <ul class="course-bullets">
+            <li>Feature engineering & pipelines</li>
+            <li>Model serving & monitoring</li>
+            <li>Capstone: Deployed REST API</li>
+          </ul>
+          <div class="card-actions">
+            <a class="btn small" href="#enroll">Enroll</a>
+            <a class="muted-link" href="#courses">Syllabus</a>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <div class="course-top">
+            <h3>Data Science & Visualization</h3>
+            <p class="muted">Exploratory analysis, storytelling, and dashboards</p>
+          </div>
+          <ul class="course-bullets">
+            <li>Pandas, SQL & visualization</li>
+            <li>Experiment design & A/B testing</li>
+            <li>Capstone: Interactive dashboard</li>
+          </ul>
+          <div class="card-actions">
+            <a class="btn small" href="#enroll">Enroll</a>
+            <a class="muted-link" href="#courses">Syllabus</a>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <div class="course-top">
+            <h3>Web Design & Frontend</h3>
+            <p class="muted">Design systems, responsive UIs, and performance</p>
+          </div>
+          <ul class="course-bullets">
+            <li>UI/UX fundamentals</li>
+            <li>React & accessible components</li>
+            <li>Capstone: Portfolio site</li>
+          </ul>
+          <div class="card-actions">
+            <a class="btn small" href="#enroll">Enroll</a>
+            <a class="muted-link" href="#courses">Syllabus</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="instructors" class="container instructors" aria-labelledby="instructors-heading">
+      <h2 id="instructors-heading">Instructors & Mentors</h2>
+      <p class="section-lead">Senior engineers and researchers who teach by doing — available for one-on-one mentorship.</p>
+
+      <div class="grid instructor-grid">
+        <div class="instructor">
+          <img src="https://via.placeholder.com/160" alt="Instructor avatar" />
+          <h4>Dr. Lina Farouk</h4>
+          <p class="muted">ML Researcher — Deep learning & production ML</p>
+        </div>
+        <div class="instructor">
+          <img src="https://via.placeholder.com/160" alt="Instructor avatar" />
+          <h4>Omar H.</h4>
+          <p class="muted">Data Scientist — Analytics & visualization</p>
+        </div>
+        <div class="instructor">
+          <img src="https://via.placeholder.com/160" alt="Instructor avatar" />
+          <h4>Sara M.</h4>
+          <p class="muted">Frontend Engineer — Design systems & performance</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="container pricing" aria-labelledby="pricing-heading">
+      <h2 id="pricing-heading">Pricing & Tracks</h2>
+      <p class="section-lead">Transparent pricing with options for individuals and teams. Scholarships available.</p>
+
+      <div class="grid pricing-grid">
+        <div class="price-card">
+          <h3>Bootcamp</h3>
+          <div class="price">$699</div>
+          <p class="muted">12 weeks — cohort-based, live sessions, capstone project</p>
+          <ul>
+            <li>Mentor support</li>
+            <li>Career workshops</li>
+            <li>Lifetime alumni access</li>
+          </ul>
+          <a class="btn" href="#enroll">Choose</a>
+        </div>
+
+        <div class="price-card featured">
+          <h3>Pro</h3>
+          <div class="price">$129/mo</div>
+          <p class="muted">Subscription — access all on-demand content + community</p>
+          <ul>
+            <li>All courses</li>
+            <li>Monthly live Q&A</li>
+            <li>Community reviews</li>
+          </ul>
+          <a class="btn primary" href="#enroll">Choose</a>
+        </div>
+
+        <div class="price-card">
+          <h3>Enterprise</h3>
+          <div class="price">Custom</div>
+          <p class="muted">Private cohorts, hiring pipelines, and team training</p>
+          <ul>
+            <li>Custom curriculum</li>
+            <li>Dedicated mentor</li>
+            <li>Hiring support</li>
+          </ul>
+          <a class="btn" href="#contact">Contact Sales</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="container testimonials" aria-labelledby="testimonials-heading">
+      <h2 id="testimonials-heading">What graduates say</h2>
+      <div class="testimonial-grid">
+        <blockquote>
+          "MDEN transformed my career — from zero experience to shipped product and a job offer." — Ahmed K.
+        </blockquote>
+        <blockquote>
+          "The capstone projects are challenging and real. Mentors cared about my growth." — Lina P.
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="faq" class="container faq" aria-labelledby="faq-heading">
+      <h2 id="faq-heading">Frequently asked questions</h2>
+      <dl>
+        <dt>Do I need prior experience?</dt>
+        <dd>No — we offer foundation tracks and bridge courses to get you ready.</dd>
+
+        <dt>Are courses self-paced?</dt>
+        <dd>We provide both cohort-based and self-paced options. See each course for details.</dd>
+      </dl>
+    </section>
+
+    <section id="contact" class="container contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Get in touch</h2>
+      <p class="section-lead">Questions, partnerships, or enterprise training — tell us about it.</p>
+
+      <form id="contact-form" class="contact-form" action="#" method="post" onsubmit="return submitForm(event)" aria-label="Contact form">
+        <div class="form-row">
+          <label>
+            Name
+            <input type="text" id="name" name="name" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" id="email" name="email" required />
+          </label>
+        </div>
+
+        <label>
+          Message
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </label>
+
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Send Message</button>
+          <button type="reset" class="btn outline">Reset</button>
+        </div>
+
+        <p class="form-note" id="form-note" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section id="enroll" class="container enroll" aria-labelledby="enroll-heading">
+      <h2 id="enroll-heading">Ready to start?</h2>
+      <p class="section-lead">Choose a track, enroll, and begin building projects that employers love.</p>
+      <a class="btn primary large" href="#contact">Apply Now</a>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <a class="logo-foot" href="#">
+          <img src="logo.svg" alt="MDEN logo" />
+          <span class="brand">MDEN</span>
+        </a>
+        <p class="muted">© <span id="year"></span> MDEN — Training passionate learners in AI, ML, Data Science & Web Design.</p>
+      </div>
+
+      <div class="footer-links">
+        <nav aria-label="Footer">
+          <ul>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "MDEN",
+    "url": "https://example.com",
+    "logo": "https://example.com/logo.svg",
+    "sameAs": []
+  }
+  </script>
 </body>
 </html>
